@@ -74,7 +74,7 @@ export default function FullPlayButton({ episode }: Props) {
               ? renderIcon(PauseIcon, 'pause')
               : renderIcon(PlayIcon, 'play'))}
         </span>
-        {hasMounted && (showPauseIcon ? 'Pause' : 'Play')} Episode
+        {hasMounted && (showPauseIcon ? 'Pausa' : 'Riproduci')} Episodio
         {hasMounted && (
           <span class="sr-only">
             (press to {showPauseIcon ? 'pause' : 'play'})

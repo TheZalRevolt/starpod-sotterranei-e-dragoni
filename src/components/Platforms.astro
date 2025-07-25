@@ -22,6 +22,24 @@ const show = await getShowInfo();
     )
   }
   {
+    platforms?.amazonMusic && (
+      <a
+        class="gradient-icon amazon h-6 w-6"
+        href={platforms.amazonMusic}
+        aria-label={`Listen to ${show.title} on Amazon Music.`}
+      />
+    )
+  }
+  {
+    platforms?.deezer && (
+      <a
+        class="gradient-icon deezer h-6 w-6"
+        href={platforms.deezer}
+        aria-label={`Listen to ${show.title} on Deezer.`}
+      />
+    )
+  }
+  {
     platforms?.apple && (
       <a
         class="gradient-icon apple h-6 w-6"

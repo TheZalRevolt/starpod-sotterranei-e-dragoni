@@ -1,0 +1,34 @@
+---
+import starpodConfig from '../../starpod.config';
+import { getShowInfo } from '../lib/rss';
+
+const { socialLinks } = starpodConfig;
+
+const show = await getShowInfo();
+---
+
+<h3 class="section-heading hidden pt-12 pb-6 lg:block">Seguici</h3>
+
+<div
+  class="mt-16 flex items-center justify-center gap-6 lg:mt-0 lg:justify-start"
+>
+  {
+    socialLinks?.instagram && (
+      <a
+        href={socialLinks.instagram}
+      >
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+    )
+  }
+    {
+      socialLinks.discord && (
+        <a
+          href={socialLinks.discord}
+        >
+          <i class="fa-brands fa-discord"></i>
+        </a>
+      )
+    }
+  
+</div>

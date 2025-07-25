@@ -1,26 +1,40 @@
 ---
 import starpodConfig from '../../starpod.config';
-import AppleIcon from '../svgs/apple.svg?raw';
-import OvercastIcon from '../svgs/overcast.svg?raw';
-import SpotifyIcon from '../svgs/spotify.svg?raw';
-import YouTubeIcon from '../svgs/youtube.svg?raw';
-
-const { platforms, rssFeed } = starpodConfig;
+const { platforms, supportPlatforms, socialLinks } = starpodConfig;
 ---
 
-<div
-  class="mt-7 grid grid-cols-2 gap-6 lg:mt-11 lg:grid-cols-3 lg:justify-start"
->
+<div class="mt-7 grid grid-cols-2 gap-6 lg:mt-11 lg:grid-cols-3 lg:justify-start">
   {
     platforms?.apple && (
-      <a
-        class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white"
-        href={platforms.apple}
-      >
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={platforms.apple}>
         <span class="flex items-center">
-          Apple Podcasts
+          Apple
           <span class="ml-3 flex h-4 w-4 items-center">
-            <Fragment set:html={AppleIcon} />
+            <i class="fab fa-apple"></i>
+          </span>
+        </span>
+      </a>
+    )
+  }
+  {
+    platforms?.deezer && (
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={platforms.deezer}>
+        <span class="flex items-center">
+          Deezer
+          <span class="ml-3 flex h-4 w-4 items-center">
+            <i class="fa-brands fa-deezer"></i>
+            </span>
+        </span>
+      </a>
+    )
+  }
+  {
+    platforms?.amazonMusic && (
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={platforms.amazonMusic}>
+        <span class="flex items-center">
+          Amazon
+          <span class="ml-3 flex h-4 w-4 items-center">
+            <i class="fab fa-amazon"></i>
           </span>
         </span>
       </a>
@@ -28,29 +42,35 @@ const { platforms, rssFeed } = starpodConfig;
   }
   {
     platforms?.spotify && (
-      <a
-        class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white"
-        href={platforms.spotify}
-      >
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={platforms.spotify}>
         <span class="flex items-center">
           Spotify
           <span class="ml-3 flex h-4 w-4 items-center">
-            <Fragment set:html={SpotifyIcon} />
+            <i class="fab fa-spotify"></i>
           </span>
         </span>
       </a>
     )
-  }
+  } 
+    {
+      platforms?.vois && (
+        <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={platforms.vois}>
+          <span class="flex items-center">
+            Vois
+            <span class="ml-3 flex h-4 w-4 items-center">
+              <i class="fas fa-microphone"></i>
+            </span>
+          </span>
+        </a>
+      )
+    }
   {
     platforms?.overcast && (
-      <a
-        class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white"
-        href={platforms.overcast}
-      >
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={platforms.overcast}>
         <span class="flex items-center">
           Overcast
           <span class="ml-3 flex h-4 w-4 items-center">
-            <Fragment set:html={OvercastIcon} />
+            <i class="fas fa-podcast"></i>
           </span>
         </span>
       </a>
@@ -58,27 +78,63 @@ const { platforms, rssFeed } = starpodConfig;
   }
   {
     platforms?.youtube && (
-      <a
-        class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white"
-        href={platforms.youtube}
-      >
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={platforms.youtube}>
         <span class="flex items-center">
           YouTube
           <span class="ml-3 flex h-4 w-4 items-center">
-            <Fragment set:html={YouTubeIcon} />
+            <i class="fab fa-youtube"></i>
           </span>
         </span>
       </a>
     )
   }
   {
-    rssFeed && (
-      <a
-        class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white"
-        href={rssFeed}
-      >
-        <span class="flex items-center">RSS Feed</span>
+    supportPlatforms?.patreon && (
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={supportPlatforms.patreon}>
+        <span class="flex items-center">
+          Patreon
+          <span class="ml-3 flex h-4 w-4 items-center">
+            <i class="fab fa-patreon"></i>
+          </span>
+        </span>
       </a>
     )
   }
+    {
+      supportPlatforms?.koFi && (
+        <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={supportPlatforms.koFi}>
+          <span class="flex items-center">
+            koFi
+            <span class="ml-3 flex h-4 w-4 items-center">
+              <i class="fas fa-coffee"></i>
+            </span>
+          </span>
+        </a>
+      )
+    }
+  {
+    socialLinks?.discord && (
+      <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={socialLinks.discord}>
+        <span class="flex items-center">
+          Discord
+          <span class="ml-3 flex h-4 w-4 items-center">
+            <i class="fab fa-discord"></i>
+          </span>
+        </span>
+      </a>
+    )
+  }
+    {
+      socialLinks?.instagram && (
+        <a class="animated-bottom-border font-bold text-light-text-heading after:mt-4 dark:text-white" href={socialLinks.instagram}>
+          <span class="flex items-center">
+            Instagram
+            <span class="ml-3 flex h-4 w-4 items-center">
+              <i class="fa-brands fa-instagram"></i>
+            </span>
+          </span>
+        </a>
+      )
+    }
+
 </div>

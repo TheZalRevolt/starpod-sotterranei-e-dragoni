@@ -23,6 +23,11 @@ export type Host = {
    * A url to the host's website
    */
   website?: string;
+  /**
+   * A url to the host's Instagram
+   */
+  instagram?: string;
+  
 };
 
 export type StarpodConfig = {
@@ -48,7 +53,32 @@ export type StarpodConfig = {
     pocketCasts?: string;
     spotify?: string;
     youtube?: string;
+    deezer?: string;
+    amazonMusic?: string;
+    vois?: string;
   };
+  /**
+   * Links to support your show on various platforms.
+   */
+  supportPlatforms: {
+    koFi?: string;
+    patreon?: string;
+    buyMeACoffee?: string;
+    paypal?: string;
+  };
+  /**
+    * Links to your show's social media accounts
+  */
+  socialLinks: {
+    instagram?: string;
+    facebook?: string;
+    twitter?: string;
+    tiktok?: string;
+    youtube?: string;
+    discord?: string;
+    website?: string;
+  };
+
   /**
    * The url to the RSS feed where your podcast is hosted.
    */

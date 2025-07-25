@@ -1,34 +1,42 @@
 import { defineStarpodConfig } from 'src/utils/config';
 
 export default defineStarpodConfig({
-  blurb: 'A whiskey fueled fireside chat with your favorite web developers.',
+  blurb: 'Un podcast su Dungeons & Dragons o Dnd per gli amici, e sui giochi di ruolo in generale, diciamocelo!',
   description:
-    'Veteran web developers RobbieTheWagner and Charles William Carpenter III host this informal, whiskey-fueled fireside chat with your favorite web devs. They discuss all things web development including JavaScript, TypeScript, EmberJS, React, Astro, SolidJS, CSS, HTML, Web3, and more. They take a unique approach and focus on getting to know the human side of developers and their hobbies outside of work, all while sampling a new whiskey that they rate on their unique tentacle scale.',
-  hosts: [
+    `Storie di Draghi e Cavalieri ma anche storie di piccoli Goblin irritanti e maghi incapaci… Storie di Fantasia e Sogni. Spunti di interpretazione, mostri e vite di personaggi Unici.
+    Benvenuti a Sotterranei e Dragoni! Un podcast su Dungeons & Dragons o DnD per gli Amici!
+    Un podcast veloce, immediato con pillole sul gioco di ruolo, sui racconti e sulla magia di riunirsi attorno ad un tavolo!
+    In ogni stagione troverete un grande racconto, diviso per episodi, a cui non mancheranno chicche descrittive per aiutare a comprendere al meglio le dinamiche di interpretazione, avere spunti per vivere e creare al meglio le proprie avventure, da condividere assieme agli amici!
+    
+    Questo podcast fa parte dell'universo di VOIS. Per scoprire di più, segui 
+    su Instagram o visita il sito https://vois.fm.`,
+    hosts: [
     {
-      name: 'RobbieTheWagner',
-      bio: 'Huge Ember and Tailwind fanboy. I work at Amazon btw.',
-      img: 'robbiethewagner.jpg',
-      github: 'https://github.com/RobbieTheWagner',
-      twitter: 'https://twitter.com/RobbieTheWagner',
-      website: 'https://robbiethewagner.dev'
+      name: 'Alessandro Renzi',
+      bio: 'Il bardo',
+      img: 'alessandrorenzi.jpg',
     },
     {
-      name: 'Charles William Carpenter III',
-      bio: 'Third of his name, user of gifs, hater of ESM.',
-      img: 'chuckcarpenter.jpg',
-      github: 'https://github.com/chuckcarpenter',
-      twitter: 'https://twitter.com/CharlesWthe3rd'
+      name: 'Matteo Manoni',
+      bio: "L'artefice",
+      img: 'matteomanoni.jpg'
     }
   ],
+  supportPlatforms: {
+    koFi: 'https://ko-fi.com/sotterraneiedragoni',
+    patreon: 'https://www.patreon.com/SotterraneieDragoni/posts',
+  },
+  socialLinks: {
+    instagram: 'https://www.instagram.com/sotterraneiedragoni/',
+    discord: 'https://discord.gg/yN4gGGqP27',
+  },
   platforms: {
     apple:
-      'https://podcasts.apple.com/us/podcast/whiskey-web-and-whatnot/id1552776603?uo=4?mt=2&ls=1',
-    appleIdNumber: '1552776603',
-    overcast: 'https://overcast.fm/itunes1552776603',
-    pocketCasts: 'https://pca.st/bezzctzj',
+      'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://podcasts.apple.com/it/podcast/sotterranei-e-dragoni/id1674752326&ved=2ahUKEwjT3fy9sdiOAxWt8rsIHdP4EZIQFnoECA4QAQ&usg=AOvVaw3rbV2yQR90hf_bW7WVTHrJ',
     spotify: 'https://open.spotify.com/show/19jiuHAqzeKnkleQUpZxDf',
-    youtube: 'https://www.youtube.com/@WhiskeyWebAndWhatnot/'
+    amazonMusic: 'https://music.amazon.it/podcasts/89db599f-03f4-4c05-aa9d-692b86c9bee8/sotterranei-e-dragoni',
+    deezer: 'https://deezer.page.link/m1RyfU6Tjy4G1XwX6',
+    vois: 'https://vois.fm/podcast/sotterranei-e-dragoni/'  
   },
-  rssFeed: 'https://rss.art19.com/whiskey-web-and-whatnot'
+  rssFeed: 'https://feeds.megaphone.fm/sotterranei'
 });

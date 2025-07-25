@@ -71,7 +71,7 @@ export default function EpisodeList({ episodes, show }: Props) {
                       class="text-light-text-heading font-bold dark:text-white"
                       href={`/${episode.episodeSlug}`}
                     >
-                      Show notes
+                      Mostra dettagli
                     </a>
                   </div>
                 </div>
