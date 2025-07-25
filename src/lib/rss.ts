@@ -79,6 +79,7 @@ export async function getAllEpisodes() {
           itunes_episodeType,
           itunes_image
         }) => {
+          console.log(`Processing episode: ${title}`);
           const episodeNumber =
             itunes_episodeType === 'bonus' ? 'Bonus' : `${itunes_episode}`;
           const episodeSlug = dasherize(title);
