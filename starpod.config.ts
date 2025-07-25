@@ -22,6 +22,15 @@ export default defineStarpodConfig({
       img: 'matteomanoni.jpg'
     }
   ],
+  platforms: {
+    apple:
+    'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://podcasts.apple.com/it/podcast/sotterranei-e-dragoni/id1674752326&ved=2ahUKEwjT3fy9sdiOAxWt8rsIHdP4EZIQFnoECA4QAQ&usg=AOvVaw3rbV2yQR90hf_bW7WVTHrJ',
+    spotify: 'https://open.spotify.com/show/19jiuHAqzeKnkleQUpZxDf',
+    amazonMusic: 'https://music.amazon.it/podcasts/89db599f-03f4-4c05-aa9d-692b86c9bee8/sotterranei-e-dragoni',
+    deezer: 'https://deezer.page.link/m1RyfU6Tjy4G1XwX6',
+    vois: 'https://vois.fm/podcast/sotterranei-e-dragoni/'  
+  },
+  rssFeed: 'https://feeds.megaphone.fm/sotterranei',
   supportPlatforms: {
     koFi: 'https://ko-fi.com/sotterraneiedragoni',
     patreon: 'https://www.patreon.com/SotterraneieDragoni/posts',
@@ -29,14 +38,5 @@ export default defineStarpodConfig({
   socialLinks: {
     instagram: 'https://www.instagram.com/sotterraneiedragoni/',
     discord: 'https://discord.gg/yN4gGGqP27',
-  },
-  platforms: {
-    apple:
-      'https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://podcasts.apple.com/it/podcast/sotterranei-e-dragoni/id1674752326&ved=2ahUKEwjT3fy9sdiOAxWt8rsIHdP4EZIQFnoECA4QAQ&usg=AOvVaw3rbV2yQR90hf_bW7WVTHrJ',
-    spotify: 'https://open.spotify.com/show/19jiuHAqzeKnkleQUpZxDf',
-    amazonMusic: 'https://music.amazon.it/podcasts/89db599f-03f4-4c05-aa9d-692b86c9bee8/sotterranei-e-dragoni',
-    deezer: 'https://deezer.page.link/m1RyfU6Tjy4G1XwX6',
-    vois: 'https://vois.fm/podcast/sotterranei-e-dragoni/'  
-  },
-  rssFeed: 'https://feeds.megaphone.fm/sotterranei'
+  }
 });
